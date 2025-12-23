@@ -1,26 +1,69 @@
-<!-- MY PERSONAL BLOG WEBSITE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Open Web Hub</title>
+    <title>Max | Tech Portfolio & Blog</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-    <!-- LINK TO CSS -->
     <link rel="stylesheet" href="main.css">
-    <!-- LINK TO JS FILE -->
     <script src="js.js" defer></script>
 </head>
 <body>
-    <!-- SECTIONS -->
-    <section id="intro" class="section">
-        <h1>The 🅾️pen🇼eb🇭ub</h1>
-        <p>Hello. And welcome to my personal website.</p>
-        <p>From gamimg🕹️ to technology🖥️ and from programming👨‍💻 to cyber security🔒, this site's purpose serves both representing my interests and hobbies as well as providing useful links to all sorts of services available on the internet.</p>
-        <p>Please find below links to web sources as well as other useful 'tools'</p>
-    </section>
-    <section>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#updates">Latest Updates</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="section">
+            <h1>The 🇲ax 🅱️log</h1>
+            <p>Welcome to my personal hub. Here, I document my journey through technology, cybersecurity, and open-source software.</p>
+        </section>
         
-    </section>
+        <section id="updates" class="section">
+            <h2>Latest Tech Updates</h2>
+            <article>
+                <h3>Example: Linux Distro News</h3>
+                <p>Stay tuned! I'll be posting updates on the latest Linux releases and tool configurations here.</p>
+            </article>
+        </section>
+
+        <section id="resources" class="section">
+            <h2>Useful Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                <li><a href="https://www.virtualbox.org/" target="_blank" rel="noopener">VirtualBox</a></li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Max. Built with clean HTML.</p>
+    </footer>
+
 </body>
 </html>
