@@ -1,0 +1,206 @@
+/* 1. Variables & Global Reset */
+:root {
+    --bg-color: #0f172a;       /* Deep dark blue */
+    --card-bg: #1e293b;        /* Lighter navy */
+    --text-main: #f8fafc;      /* Almost white */
+    --text-dim: #94a3b8;       /* Muted blue-grey */
+    --accent: #38bdf8;         /* Bright sky blue */
+    --accent-hover: #0ea5e9;
+    --sidebar-width: 200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex; /* Sidebar layout start */
+    min-height: 100vh;
+}
+
+/* 2. Sidebar Navigation */
+header {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--card-bg);
+    border-right: 1px solid #334155;
+    padding: 2rem 1rem;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dim);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: var(--accent);
+    background: var(--bg-color);
+    padding-left: 1rem;
+}
+
+/* 3. Content Wrapper & Centering */
+.content-wrapper {
+    flex: 1; /* Fills remaining width next to sidebar */
+    margin-left: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers main and footer horizontally */
+}
+
+main {
+    width: 100%;
+    max-width: 800px; /* Limits width for readability */
+    padding: 2rem;
+    align-items: center;
+}
+
+.section {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--card-bg);
+}
+
+/* 4. Typography */
+h1, h2, h3 {
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+h1 { 
+    font-size: 2.5rem; 
+    text-align: center; 
+}
+
+/* 5. Articles & Links */
+article {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--accent);
+}
+
+ul {
+    list-style-position: inside;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 6. Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: var(--text-dim);
+    gap: 0.5rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    background: var(--bg-color);
+    border: 1px solid var(--text-dim);
+    border-radius: 6px;
+    color: white;
+    font-family: inherit;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: var(--accent);
+    color: var(--bg-color);
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+/* 7. Footer */
+footer {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes footer to bottom if page is short */
+}
+
+/* 8. Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid var(--card-bg);
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+    .content-wrapper {
+        margin-left: 0;
+    }
+}
