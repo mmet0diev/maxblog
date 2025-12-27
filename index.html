@@ -36,28 +36,60 @@
             <section id="updates" class="section">
                 <h2>Latest Tech Updates</h2>
                 <article>
-                    <h3>25/12/2025 - Exploring Bisq: The Sovereign DEX <img id="bisqimg" src="0ther/imgs/bisq.png"></h3>
-                    <h2><b>What is Bisq?</b></h2>
+                    <header>Bisq Tutorial</header>
+                    <h5>Written: 26/12/2025</h5>
+                    <h3>Bisq: The Sovereign DEX <img id="bisqimg" src="0ther/imgs/bisq.png"></h3>
+                    
+                    <h2>What is Bisq?</h2>
                     <p>Bisq is a DEX (Decentralized Exchange) service.</p>
                     <p>It is a software that enables users to anonymously sell/buy crypto such as bitcoin.</p>
                     <br>
-                    <h2><b>How it works?</b></h2>
+                    <h2>How to get it?</h2>
                     <p>In order to use Bisq, you first need to install it, you do this by going to the official <a
                             href="https://bisq.network/downloads/" target="_blank">bisq website</a>, choose your operating system and follow the steps there.
                         I will run you through the linux option. I am using Linux Mint in this case which is an Ubuntu based distro.
                     </p>
                     <p>You download the .deb file for Debian/Ubuntu:</p>
                     <img src="0ther/imgs/debfile.png">
+                    <p>Wait for the file to download:</p>
+                    <img id="img1" src="0ther/imgs/downloadedbisq.png">
+                    <p>Once downlaoded, you have two options to install.</p>
+                    <p>Option 1: File Explorer (Beginner friendly)</p>
+                    <p>You go to the file explorer, by pressing the shortcut win + e 
+                        or win + 1 (note, this assumes that the file explorer is present on the panel at the bottom, on the first position):
+                        <img id="img2" src="0ther/imgs/linuxpanel.png">
+                        <img id="img3" src="0ther/imgs//fexdwnlds.png">
+                    </p>
+                    <p>You right click on the downloaded .deb file, and select "Open with package installer" and press install 
+                        (Please note, I've installed it already so the option in the example is to reinstall it):</p>
+                    <img src="0ther/imgs/guiinstall1.png">
 
+                    <p>You will most likely be prompted to enter your admin/root password, you enter it, proceed and Bisq is installed on your system.</p>
+                    
+                    <p>Option 2: From terminal <img id="terminalimg" src="0ther/imgs/terminal1.png"></p>
+                    <p>This is the standard and "Pro" way to install software on Linux systems.</p>
+                    <p>There are two ways/commands which we can use here:</p>
+                    <p>The dpkg command. We can use it as below:</p>
+                    <p>sudo dpkg -i Bisq-64bit-1.9.22.deb</p>
+                    <img src="0ther/imgs/dpkginstall1.png">
+                    <p>or apt:</p>
+                    <p>sudo apt install ./Bisq-64bit-1.9.22.deb</p>
+                    <img src="0ther/imgs/aptinstallbisq1.png">
+                    <p>Note, ensure that you are in the "Downloads" directory/folder, or you would need to specify the full path as:</p>
+                    <p>/Downloads/Bisq-64bit-1.9.22.deb</p>
+
+                    <p>Congratulations! Bisq is now installed on your computer:</p>
+                    <img id="bisqendscreen" src="0ther/imgs/bisqscreen.png">
+                    <p>In the next tutorial we are going to be exploring Bisq, 
+                        how accounts are set up and how to use Bisq to buy/sell cryptocurrencies for fiat cryptocurrencies.</p>
                 </article>
             </section>
 
             <section id="resources" class="section">
                 <h2>Useful Resources</h2>
                 <ul>
-                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
-                    <li><a href="https://www.virtualbox.org/" target="_blank" rel="noopener">VirtualBox</a></li>
-                    <li><a href="https://www.linux.org/" target="_blank" rel="noopener">Linux.org</a></li>
+                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>                    
+                    <li><a href="https://www.wikipedia.org/" target="_blank">wikipedia</a></li>
                 </ul>
             </section>
 
@@ -88,7 +120,7 @@
             </section>
 
             <footer>
-                <p>&copy; 2025 Max. Built with clean HTML.</p>
+                <p>&copy; Created by Maksimiliyan Metodiev. Built with clean HTML.</p>
             </footer>
         </main>
     </div>

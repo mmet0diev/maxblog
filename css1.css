@@ -1,5 +1,27 @@
 #bisqimg{
-    margin-left: 0.5rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
     width: 3rem;
+    height: auto;
+}
+
+#img1{
+    width:auto;
+    height: 4rem;
+}
+
+#img3{
+    width:auto;
+    height: 20rem;
+}
+
+#terminalimg{
+    width: 1.5rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+#bisqendscreen{
+    width:40rem;
     height: auto;
 }
